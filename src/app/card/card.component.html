@@ -1,0 +1,16 @@
+<header>
+    <img [src] = "imageSrc" [alt]="name">
+</header>
+
+<main>
+    <p>Nom: {{name}} </p>
+    <p>Prénom: {{firstname}} </p>
+    Citation: {{quote}} <br>
+    <input type="text" [(ngModel)]="quote">
+
+</main>
+
+<button (click)="hiddenAge()">Afficher/Masquer l'âge</button>
+
+<div [hidden] = "isShow">{{age}}</div>
+
