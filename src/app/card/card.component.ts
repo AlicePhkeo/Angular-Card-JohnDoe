@@ -1,11 +1,14 @@
 
 import { Component } from '@angular/core';
 import { FormsModule } from '@angular/forms';
+import { MenuComponent } from '../menu/menu.component';
+import { RouterLink } from '@angular/router';
+import { SignUpComponent } from '../sign-up/sign-up.component';
 
 @Component({
   selector: 'app-card',
   standalone: true,
-  imports: [FormsModule],
+  imports: [FormsModule, MenuComponent, RouterLink, SignUpComponent],
   templateUrl: './card.component.html',
   styleUrl: './card.component.css'
 })
